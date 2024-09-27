@@ -24,66 +24,73 @@
 <body class="bg-[#F7F8F8] " style="font-family: 'Outfit', system-ui;">
 
   <!-- bus name section -->
-  <section class="container m-auto">
-    <div class="w-[50%] m-auto pt-10">
-      <h1 class="text-center text-5xl font-extrabold">RHS Paribahan</h1>
+  <section class="container m-auto max-sm:w-[90vw] ">
+    <div class="w-[50%] m-auto pt-10 max-sm:w-full">
+      <h1 class="text-center text-5xl  font-extrabold">RHS Paribahan</h1>
       <p class="text-center text-lg">Yes, you can run unit tests and view the results directly within the app. The
         integrated testing features allow for a streamlined .</p>
     </div>
 
     <!-- ticket design -->
-    <div class="bg-white w-[75%] m-auto flex justify-around gap-14 p-3 py-10 my-10 items-center rounded-3xl relative">
+    <div class="bg-white w-[75%] m-auto flex justify-around max-sm:justify-center gap-14 p-3 max-sm:p-0 py-10 max-sm:py-5 my-10 max-sm:my-8 items-center rounded-3xl relative max-sm:w-full">
 
 
 
-      <div class="w-[72%]  border-dashed border-r-[3px] border-green-500 pr-14">
+      <div class="w-[72%] max-sm:w-[90%] max-sm:h-full border-dashed border-r-[3px] max-sm:border-0 border-green-500 pr-14 max-sm:pr-0 overflow-hidden">
 
-        <div class="flex justify-between  items-center">
-          <div class="flex justify-between">
-            <div class="flex  w-[350px] items-center justify-around">
+        <div class="flex justify-between  items-center  ">
+          <div class="flex justify-between ">
+
+            <div class="flex  w-[350px] items-center justify-around max-sm:py-5">
               <img src="./asset/bus-logo.png" alt="">
               <div>
                 <h1 class="text-2xl font-extrabold">RHS Paribahan</h1>
                 <p class="text-[18px]">Coach-009-WEB ! AC_Business</p>
               </div>
+
+
             </div>
 
           </div>
-          <button class="btn text-[#1DD100] bg-[#1cd10034]">
+          <button class="btn text-[#1DD100] bg-[#1cd10034] max-sm:hidden ">
             <img src="./asset/seat-green.png" alt="">
              <span id="availableSeat">40 Seats left</span>
           </button>
 
         </div>
 
-        <div class="rounded-2xl bg-[#F7F8F8] p-4 mt-5">
+        <div class="rounded-2xl bg-[#F7F8F8] p-4 max-sm:p-4 mt-5 max-sm:mt-0  ">
 
-          <div class="flex justify-between border-b border-dashed py-4">
+          <div class="flex justify-between border-b border-dashed py-4 max-sm:py-2">
             <h1 class="text-xl">Route</h1>
             <h1 class="text-xl">Dhaka-Sylhet</h1>
           </div>
-          <div class="flex justify-between border-b border-dashed py-4">
+          <div class="flex justify-between border-b border-dashed py-4 max-sm:py-2">
             <h1 class="text-xl">Departure Time</h1>
             <h1 class="text-xl">9:00 PM</h1>
           </div>
-          <div class="flex justify-around py-4">
-            <h1 class="py-2 px-3 rounded-lg bg-[#d1d1d1] text-xl ">Boarding Point-Laxmipur</h1>
-            <h1 class="py-2 px-3 rounded-lg bg-[#d1d1d1] text-xl ">Dropping Point-Bogura</h1>
-            <h1 class="py-2 px-3 rounded-lg bg-[#d1d1d1] text-xl ">Est. Time-11 Hour</h1>
+          <div class="flex max-sm:flex-col justify-around py-4 max-sm:py-3 max-sm:gap-2 ">
+            <h1 class="py-2 px-3 max-sm:px-2 rounded-lg bg-[#d1d1d1] text-xl ">Boarding Point-Laxmipur</h1>
+            <h1 class="py-2 px-3 max-sm:px-2 rounded-lg bg-[#d1d1d1] text-xl ">Dropping Point-Bogura</h1>
+            <h1 class="py-2 px-3 max-sm:px-2  rounded-lg bg-[#d1d1d1] text-xl ">Est. Time-11 Hour</h1>
             
             </div>
+            <button class="btn text-[#1DD100] bg-[#1cd10034] md:hidden lg:hidden ">
+              <img src="./asset/seat-green.png" alt="">
+               <span id="availableSeat">40 Seats left</span>
+            </button>
         </div>
 
       </div>
 
-      <div class=" flex flex-col items-center pr-8 ">
+      <div class=" flex flex-col items-center pr-8 max-sm:hidden">
         <img src="./asset/fare.png" alt="">
         <h1 class="font-extrabold text-3xl">550 Taka</h1>
         <p class="text-xl">Per Seat</p>
       </div>
 
-      <div class="w-[75px] h-[75px] rounded-full bg-[#F7F8F8] absolute -top-[34px] right-[268px]"></div>
-      <div class="w-[75px] h-[75px] rounded-full bg-[#F7F8F8] absolute -bottom-[34px] right-[268px] "></div>
+      <div class="w-[75px] h-[75px] rounded-full bg-[#F7F8F8] absolute -top-[34px] right-[268px] max-sm:hidden"></div>
+      <div class="w-[75px] h-[75px] rounded-full bg-[#F7F8F8] absolute -bottom-[34px] right-[268px] max-sm:hidden"></div>
 
     </div>
 
@@ -92,11 +99,11 @@
 
 
 
-  <section class="bg-white container m-auto rounded-lg flex justify-between p-8">
+  <section class="bg-white container m-auto rounded-lg flex justify-between p-8 max-sm:flex max-sm:flex-col max-sm:gap-10">
     <!-- booiking section -->
-     <section class="p-2 pr-6 border-r-[3px] border-dashed">
+     <section class="p-2 pr-6 border-r-[3px] border-dashed max-sm:border-none">
       <!-- part1 booking left side -->
-       <div class="w-[45vw] ">
+       <div class="w-[45vw] max-sm:w-full">
         <h1 class="text-3xl font-semibold pb-4">Select your Seat</h1>
         <div class="flex justify-between border-y-2 border-dashed  py-4 text-xl ">
           <h1 class="flex items-center justify-between w-[120px]"><img src="./asset/seat-green.png" alt=""><p>Available</p></h1>
@@ -105,8 +112,8 @@
           
         </div>
        </div>
-
-       <div class="grid grid-cols-9 gap-10 text-center mt-8">
+<!-- seat list -->
+       <div class="grid grid-cols-9 gap-10 max-sm:gap-5 text-center mt-8">
         <!-- seat part -->
          <p class="  py-5 font-bold text-xl rounded-xl"></p>
          <p class="col-span-2  py-5 font-bold text-xl rounded-xl"></p>
@@ -187,7 +194,7 @@
         
       
 
-        <div class="bg-[#F7F8F8] rounded-2xl p-4 px-7 mt-5">
+        <div class="bg-[#F7F8F8] rounded-2xl p-4  px-7 max-sm:px-4 mt-5">
           <!-- js part -->
             <div class="flex justify-between font-bold text-xl border-b-2 border-dashed py-3">
               <h4 class="relative">Seat<span id="indicator" class="indicator-item bg-green-500 w-[2px] -top-1 badge absolute">0</span></h4>
@@ -196,48 +203,33 @@
             </div>
 <!-- js part temp -->
 
-<div id="ticktDetails">   </div>
+<div class="ticktDetailsArry" id="ticktDetails">   </div>
             <!-- <div class="flex justify-between py-2 ">
               <h4>C2</h4>
               <h4>Economoy</h4>
               <h4>550</h4>
             </div>
-            <div class="flex justify-between py-2">
-              <h4>C2</h4>
-              <h4>Economoy</h4>
-              <h4>550</h4>
-            </div>
-            <div class="flex justify-between py-2">
-              <h4>C2</h4>
-              <h4>Economoy</h4>
-              <h4>550</h4>
-            </div>
-            <div class="flex justify-between py-2">
-              <h4>C2</h4>
-              <h4>Economoy</h4>
-              <h4>550</h4>
-            </div> -->
-
+            
 
             <!-- total price -->
              <div class="flex justify-between font-bold text-lg border-t-2 py-3 mt-3">
               <h3>Total Price</h3>
-              <h3>BDT 1021</h3>
+              <h3 id="totalPrice">BDT 0</h3>
              </div>
 
-             <div class="w-[85%]  m-auto relative py-2">
-              <input class="border-none rounded-lg h-14 w-[100%] p-4 " type="text" placeholder="Have any copupon?">
-              <button class="bg-green-500 text-white rounded-xl h-12 w-24 absolute right-[7px] top-[12px]">Apply</button>
+             <div class="w-[85%] max-sm:w-full   m-auto relative py-2">
+              <input disabled  id="cuponInput" class="border-none rounded-lg h-14 w-[100%] p-4 " type="text" placeholder="Have any copupon?">
+              <button disabled  id="cuponBtn" class="bg-gray-500 text-white rounded-xl h-12 w-24 absolute right-[7px] top-[12px]">Apply</button>
              </div>
 
-             <div class="flex justify-between font-bold text-lg py-2">
+             <div id="discount" class="flex justify-between font-bold text-lg py-2 hidden">
               <h3>Discount</h3>
-              <h3>BDT 100</h3>
+              <h3>BDT 200</h3>
              </div>
 <!-- js part -->
              <div class="flex justify-between font-bold text-lg py-2">
               <h3>Grand Total</h3>
-              <h3>BDT 1100</h3>
+              <h3 id="grandTk">BDT 0</h3>
              </div>
 
 
@@ -282,7 +274,7 @@
 
 
      <!-- The button to open modal -->
-<label for="my_modal_7" class="btn w-full my-3 text-xl bg-green-500">Next</label>
+<label for="my_modal_6" class="btn w-full my-3 text-xl bg-green-500">Next</label>
 
 
 
@@ -290,18 +282,21 @@
        </div>
     
      </section>
+
+
   </section>
   <!-- Put this part before </body> tag -->
-  <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+  <input type="checkbox" id="my_modal_6" class="modal-toggle" />
 <div class="modal" role="dialog">
   <div class="modal-box text-center flex flex-col items-center w-[80%] gap-5">
     <img src="./asset/success.png" alt="">
     <h1 class="font-bold">Thank you for Booking Our Bus Seats. 
       We are working hard to find the best service and deals for you.</h1>
       <p>Shortly you will find a confirmation in your email.</p>
-      <button class="btn btn-wide bg-green-500">Next</button>
+      <label id="reload" for="my_modal_6" class="btn btn-wide bg-green-500">Next..</label>
   </div>
-  <label class="modal-backdrop" for="my_modal_7">Close</label>
+
+  <label class="modal-backdrop" for="my_modal_6">Close</label>
 </div>
 <script src="./script.js"></script>
 </body>
