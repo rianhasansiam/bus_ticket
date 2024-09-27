@@ -1,6 +1,7 @@
 const ticktDetails = document.getElementById("ticktDetails");
 const indicator = document.getElementById("indicator");
 const availableSeat = document.getElementById("availableSeat");
+const smavailableSeat = document.getElementById("smavailableSeat");
 const cuponBtn=document.getElementById('cuponBtn')
 const cuponInput=document.getElementById('cuponInput');
 const totalPrice=document.getElementById('totalPrice');
@@ -23,7 +24,9 @@ function busTicket(access) {
     access.classList.toggle("bg-green-500");
     ticktDetails.removeChild(document.getElementById(access.innerText));
     const newAvaiableSeat = parseFloat(availableSeat.innerText) + 1;
-    availableSeat.innerText = newAvaiableSeat;
+    availableSeat.innerText = `${newAvaiableSeat} Seats left`;
+    const smnewAvaiableSeat = parseFloat(smavailableSeat.innerText) + 1;
+    smavailableSeat.innerText = `${smnewAvaiableSeat} Seats left`;
 
     const newIndicatorSeat = parseFloat(indicator.innerText) - 1;
     indicator.innerText = newIndicatorSeat;
@@ -51,8 +54,11 @@ function busTicket(access) {
     
    
     const newAvaiableSeat = parseFloat(availableSeat.innerText) - 1;
-    availableSeat.innerText = newAvaiableSeat;
-
+    availableSeat.innerText =`${newAvaiableSeat} Seats left`;
+    const smnewAvaiableSeat = parseFloat(smavailableSeat.innerText) - 1;
+    smavailableSeat.innerText =`${smnewAvaiableSeat} Seats left`;
+    
+    
     const newIndicatorSeat = parseFloat(indicator.innerText) + 1;
     indicator.innerText = newIndicatorSeat;
   }
